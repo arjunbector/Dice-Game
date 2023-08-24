@@ -11,17 +11,17 @@ const RollDice = ({currentDice, rollDice}) => {
 
   
   const getImage = () => {
-    if (currentDice == 1) {
+    if (currentDice === 1) {
       return dice_1;
-    } else if (currentDice == 2) {
+    } else if (currentDice === 2) {
       return dice_2;
-    } else if (currentDice == 3) {
+    } else if (currentDice === 3) {
       return dice_3;
-    } else if (currentDice == 4) {
+    } else if (currentDice === 4) {
       return dice_4;
-    } else if (currentDice == 5) {
+    } else if (currentDice === 5) {
       return dice_5;
-    } else if (currentDice == 6) {
+    } else if (currentDice === 6) {
       return dice_6;
     }
   };

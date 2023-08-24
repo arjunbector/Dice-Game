@@ -2,15 +2,15 @@ import styled from "styled-components";
 import dices from "../assets/dices 1.svg";
 import { Button } from "./Button";
 
-export default function StartGame({toggle}) {
+export default function StartGame({ toggle }) {
   return (
     <div>
       <Container>
         <img src={dices} alt="" />
         <div className="content">
           <h1>DICE GAME</h1>
-          <Button
-          onClick={toggle}>Play Now</Button>
+          <div>
+          <Button onClick={toggle}>Play Now</Button></div>
         </div>
       </Container>
     </div>
@@ -22,13 +22,28 @@ const Container = styled.div`
   display: flex;
   gap: 100px;
   align-items: center;
-  margin: 0 auto;
+  margin: auto;
   height: 100vh;
-  .content{
-    h1{
-        font-size:96px;
-        white-space: nowrap;
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 96px;
+      white-space: nowrap;
+    }
+  }
+  img {
+    width: 500px;
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    .content {
+      h1 {
+        font-size: 50px;
+      }
     }
   }
 `;
-

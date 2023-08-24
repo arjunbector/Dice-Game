@@ -28,5 +28,12 @@ const RulesContainer = styled.div`
   }
   .text {
     margin-top: 24x;
+    p{
+        margin: 10px 0;
+      }
+  }
+  @media (max-width:800px){
+    margin: 20px 20px;
+    
   }
 `;

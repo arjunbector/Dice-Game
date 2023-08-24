@@ -76,4 +76,12 @@ const MainContainer = styled.main`
     align-items: center;
     gap: 18px;
   }
+  @media (max-width : 800px){
+    display: flex;
+    flex-direction:column;
+    .top-section{
+      flex-direction:column;
+      align-items: center;
+    }
+  }
 `;
